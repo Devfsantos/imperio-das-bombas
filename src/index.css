@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-gold-50: #fdfaeb;
+  --color-gold-100: #fcf2c6;
+  --color-gold-200: #fae38c;
+  --color-gold-300: #f7cf4a;
+  --color-gold-400: #f4b815;
+  --color-gold-500: #eab006;
+  --color-gold-600: #cc8b00;
+  --color-gold-700: #a36303;
+  --color-gold-800: #864f0b;
+  --color-gold-900: #714010;
+  --color-gold-950: #412004;
+
+  --color-dark-900: #0a0a0a;
+  --color-dark-950: #000000;
+  
+  --font-sans: 'Inter', sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-dark-950 text-white font-sans antialiased selection:bg-gold-500 selection:text-dark-950;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-gold-300 via-gold-500 to-gold-700;
+  }
+  
+  .glow-gold {
+    box-shadow: 0 0 80px -20px var(--color-gold-500);
+  }
+
+  .glow-gold-subtle {
+    box-shadow: 0 0 50px -25px var(--color-gold-500);
+  }
+}

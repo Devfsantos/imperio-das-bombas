@@ -331,7 +331,7 @@ export default function App() {
                   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
                 </div>
                 <div className="hero-card-info">
-                  <h4>Atendimento 24h</h4>
+                  <p className="hero-card-title">Atendimento 24h</p>
                   <span>Online agora · Respondemos em minutos</span>
                 </div>
                 <div className="hero-card-status">Online</div>

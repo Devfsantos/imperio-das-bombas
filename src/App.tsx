@@ -148,7 +148,7 @@ const DIFFS = [
   { icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>, title: 'Garantia por Escrito', desc: 'Todo serviço realizado tem garantia documentada e suporte pós-atendimento.' },
   { icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 2v4"/><path d="M12 18v4"/><path d="M4.93 4.93l2.83 2.83"/><path d="M16.24 16.24l2.83 2.83"/><path d="M2 12h4"/><path d="M18 12h4"/><path d="M4.93 19.07l2.83-2.83"/><path d="M16.24 7.76l2.83-2.83"/></svg>, title: 'Orçamento Transparente', desc: 'Sem taxas ocultas. Você só autoriza depois de saber o valor exato.' },
   { icon: <UsersIcon size={22} />, title: '+5.000 Clientes', desc: 'Mais de uma década atendendo com excelência residências, empresas e indústrias.' },
-  { icon: <MapPinIcon size={22} />, title: 'Cobertura Regional', desc: 'Praia Grande, Santos, São Vicente, Mongaguá, Itanhaém, Peruíbe e mais 8 cidades.' },
+  { icon: <MapPinIcon size={22} />, title: 'Cobertura Regional', desc: 'Toda a Baixada Santista e Litoral Sul atendidos com equipes distribuídas estrategicamente.' },
 ]
 
 const AREAS = [

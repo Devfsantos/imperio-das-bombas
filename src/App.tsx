@@ -104,7 +104,7 @@ function UsersIcon({ size = 20 }: { size?: number }) {
   )
 }
 
-const WA = 'https://wa.me/5513974016491?text=Olá! Vim pelo site e gostaria de um orçamento.'
+const WA = 'https://wa.me/551334812824?text=Olá! Vim pelo site e gostaria de um orçamento.'
 const TEL = 'tel:+551334812824'
 const TEL2 = 'tel:+5513988364002'
 const INSTA = 'https://www.instagram.com/imperio.bombas/'
@@ -671,7 +671,7 @@ export default function App() {
                 <div className="contact-compact">
                   <a href={WA} target="_blank" rel="noreferrer" className="contact-compact-item">
                     <WhatsAppIcon size={18} />
-                    <span>(13) 97401-6491</span>
+                    <span>(13) 3481-2824</span>
                   </a>
                   <a href={TEL} className="contact-compact-item">
                     <PhoneIcon size={18} />
@@ -770,7 +770,7 @@ export default function App() {
                   <PhoneIcon size={15} /><span>(13) 98836-4002</span>
                 </a>
                 <a href={WA} target="_blank" rel="noreferrer" className="footer-contact-item">
-                  <WhatsAppIcon size={15} /><span>(13) 97401-6491</span>
+                  <WhatsAppIcon size={15} /><span>(13) 3481-2824</span>
                 </a>
               </div>
             </div>

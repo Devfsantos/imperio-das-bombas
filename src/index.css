@@ -51,8 +51,8 @@ h1, h2, h3, h4 {
 
 .container { width: 100%; max-width: 1120px; margin: 0 auto; padding: 0 1.5rem; }
 
-section { padding: 5rem 0; }
-@media (max-width: 768px) { section { padding: 3.5rem 0; } }
+section { padding: 3rem 0; }
+@media (max-width: 768px) { section { padding: 2.25rem 0; } }
 
 .section-label {
   display: inline-flex;

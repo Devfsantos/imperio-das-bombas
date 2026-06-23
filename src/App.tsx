@@ -156,11 +156,9 @@ const AREAS = [
   { name: 'Santos', hq: false },
   { name: 'São Vicente', hq: false },
   { name: 'Cubatão', hq: false },
+  { name: 'Guarujá', hq: false },
   { name: 'Mongaguá', hq: false },
   { name: 'Itanhaém', hq: false },
-  { name: 'Peruíbe', hq: false },
-  { name: 'Bertioga', hq: false },
-  { name: 'Guarujá', hq: false },
 ]
 
 const TESTIMONIALS = [
@@ -423,16 +421,15 @@ export default function App() {
                 Anos de Experiência, Milhares de Clientes Satisfeitos
               </h2>
               <p style={{ color: 'var(--text-secondary)', fontSize: '1rem', lineHeight: 1.7, marginBottom: '1.5rem' }}>
-                A <strong>Império das Bombas</strong> é uma empresa especializada em serviços de manutenção hidráulica,
-                desentupimento, dedetização e limpeza. Atuamos há mais de 18 anos em Praia Grande e em toda
-                a Baixada Santista, com equipe treinada e equipamentos modernos.
+                A <strong>Império das Bombas</strong> atua há mais de 18 anos oferecendo soluções profissionais em
+                desentupimento, dedetização, limpeza técnica e manutenção hidráulica. Trabalhamos com equipamentos
+                modernos, equipe especializada e emitimos relatórios técnicos, certificados de execução dos serviços
+                e garantias por escrito, proporcionando segurança e tranquilidade aos nossos clientes.
               </p>
               <p style={{ color: 'var(--text-secondary)', fontSize: '1rem', lineHeight: 1.7, marginBottom: '2rem' }}>
-                Nosso compromisso é oferecer serviços de qualidade com preços justos, transparência e
-                garantia por escrito. Todos os nossos profissionais são certificados e seguem as normas
-                técnicas e de segurança exigidas pelos órgãos competentes.
+                Nosso objetivo é oferecer soluções eficientes, seguras e duradouras, mantendo elevados padrões
+                de qualidade, respeito ao cliente e responsabilidade técnica em todos os serviços executados.
               </p>
-
               <div className="about-features">
                 {[
                   { icon: <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 22s-8-4-8-10V5l8-3 8 3v7c0 6-8 10-8 10z"/></svg>, text: 'Equipamentos modernos e certificados' },
@@ -533,7 +530,7 @@ export default function App() {
       <section id="areas" style={{ background: 'var(--bg-alt)' }}>
         <div className="container">
           <ScrollReveal className="section-header">
-            <div className="section-label">Áreas Atendidas</div>
+            <div className="section-label">Áreas de Atendimento</div>
             <h2 className="section-title">Atendemos toda a Baixada Santista</h2>
             <p className="section-desc">Equipes distribuídas estrategicamente para chegar até você com rapidez e eficiência.</p>
           </ScrollReveal>
@@ -548,7 +545,7 @@ export default function App() {
                 </span>
               ))}
             </div>
-            <p className="areas-more">+ cidades da Baixada Santista e Litoral Sul</p>
+            <p className="areas-more">Além de outras cidades da região mediante consulta.</p>
           </ScrollReveal>
         </div>
       </section>
@@ -579,6 +576,34 @@ export default function App() {
                 </div>
               </div>
             </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* ═══ DOCUMENTAÇÃO ═══ */}
+      <section id="documentacao" style={{ background: 'var(--bg-alt)' }}>
+        <div className="container">
+          <ScrollReveal className="section-header">
+            <div className="section-label">Documentação</div>
+            <h2 className="section-title">Documentação e Certificação</h2>
+            <p className="section-desc">Após a execução dos serviços, disponibilizamos documentação completa conforme a necessidade do cliente.</p>
+          </ScrollReveal>
+          <ScrollReveal>
+            <div className="doc-grid">
+              {[
+                'Certificado de Limpeza e Higienização de Caixa d\'Água',
+                'Certificado de Dedetização e Controle de Pragas',
+                'Relatórios Técnicos com Fotos e Vídeos',
+                'Comprovantes de Execução dos Serviços',
+                'Garantias por Escrito',
+              ].map((item, i) => (
+                <div key={i} className="doc-item">
+                  <div className="doc-item-icon"><CheckIcon size={20} /></div>
+                  <span>{item}</span>
+                </div>
+              ))}
+            </div>
+            <p className="doc-note">Documentação ideal para <strong>condomínios, empresas, comércios, escolas, clínicas</strong> e demais estabelecimentos que necessitam comprovar a realização dos serviços.</p>
           </ScrollReveal>
         </div>
       </section>
@@ -692,13 +717,13 @@ export default function App() {
                 </div>
 
                 <div className="contact-socials">
-                  <a href={INSTA} target="_blank" rel="noreferrer" className="contact-social" aria-label="Instagram">
+                  <a href={INSTA} target="_blank" rel="noreferrer" className="contact-social contact-social-insta" aria-label="Instagram">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
                   </a>
-                  <a href={FACE} target="_blank" rel="noreferrer" className="contact-social" aria-label="Facebook">
+                  <a href={FACE} target="_blank" rel="noreferrer" className="contact-social contact-social-face" aria-label="Facebook">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
                   </a>
-                  <a href={WA} target="_blank" rel="noreferrer" className="contact-social" aria-label="WhatsApp">
+                  <a href={WA} target="_blank" rel="noreferrer" className="contact-social contact-social-wa" aria-label="WhatsApp">
                     <WhatsAppIcon size={18} />
                   </a>
                 </div>

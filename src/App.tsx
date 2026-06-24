@@ -192,6 +192,31 @@ export default function App() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
+
+  // SplitType hero title animation
+  useEffect(() => {
+    const script = document.createElement('script')
+    script.src = 'https://unpkg.com/split-type'
+    script.onload = () => {
+      try {
+        const ST = (window as any).SplitType
+        if (!ST) return
+        const el = document.querySelector('.hero-split-title') as HTMLElement
+        if (!el) return
+        const split = new ST(el, { types: 'words' })
+        split.words.forEach((word: HTMLElement, i: number) => {
+          word.style.opacity = '0'
+          word.style.transform = 'translateY(24px)'
+          word.style.display = 'inline-block'
+          word.style.transition = `opacity 0.7s cubic-bezier(0.22,1,0.36,1) ${i * 80}ms, transform 0.7s cubic-bezier(0.22,1,0.36,1) ${i * 80}ms`
+          setTimeout(() => { word.style.opacity = '1'; word.style.transform = 'translateY(0)' }, 120 + i * 80)
+        })
+      } catch {}
+    }
+    document.head.appendChild(script)
+    return () => { try { document.head.removeChild(script) } catch {} }
+  }, [])
+
   useEffect(() => {
     const sections = NAV_ITEMS.map(n => document.getElementById(n.id)).filter(Boolean) as HTMLElement[]
     if (sections.length === 0) return
@@ -237,8 +262,7 @@ export default function App() {
       <header className={`header ${scrolled ? 'scrolled' : 'transparent'}`}>
         <div className="container header-inner">
           <a href="#hero" className="header-logo">
-            <img src="/images/Design sem nome (1).jpg" alt="Império das Bombas" className="header-logo-img" />
-            Império<span> das Bombas</span>
+            <img src="/images/logo-escura.png" alt="Império das Bombas" className="header-logo-img" />
           </a>
 
           <nav className={`header-nav ${menuOpen ? 'open' : ''}`}>
@@ -281,7 +305,7 @@ export default function App() {
               Atendimento 24h · Emergência
             </div>
 
-            <h1>
+            <h1 className="hero-split-title">
               Soluções profissionais em <span>bombas, desentupimento</span> e dedetização
             </h1>
 
@@ -749,8 +773,7 @@ export default function App() {
           <div className="footer-grid">
             <div>
               <div className="footer-brand">
-                <img src="/images/Design sem nome (1).jpg" alt="Império das Bombas" className="header-logo-img" />
-                Império<span> das Bombas</span>
+                <img src="/images/logo-escura.png" alt="Império das Bombas" className="footer-logo-img" />
               </div>
               <p className="footer-desc">
                 Especialistas em bombas, desentupimento, dedetização e manutenção hidráulica. 

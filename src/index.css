@@ -186,13 +186,12 @@ section { padding: 3rem 0; }
 .header-logo span { color: var(--primary); }
 
 .header-logo-img {
-  height: 44px;
-  width: 44px;
-  object-fit: cover;
-  object-position: center center;
+  height: 52px;
+  width: auto;
+  object-fit: contain;
   display: block;
   flex-shrink: 0;
-  border-radius: 50%;
+  border-radius: 0;
 }
 
 .header-nav {
@@ -208,6 +207,7 @@ section { padding: 3rem 0; }
   font-weight: 500;
   color: rgba(255,255,255,0.7);
   transition: all var(--transition);
+  cursor: pointer;
 }
 .header-nav a:hover { color: var(--primary); background: rgba(201,149,42,0.1); }
 
@@ -1305,6 +1305,13 @@ a.contact-compact-item:hover { color: var(--primary); }
 }
 
 .footer-brand span { color: #D4A843; }
+
+.footer-logo-img {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
 
 .footer-desc {
   color: #94a3b8;

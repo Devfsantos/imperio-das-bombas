@@ -2,7 +2,7 @@ import { useEffect, useState, useRef, useCallback } from 'react'
 
 function WhatsAppIcon({ size = 20 }: { size?: number }) {
   return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor">
+    <svg aria-hidden="true" width={size} height={size} viewBox="0 0 24 24" fill="currentColor">
       <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
     </svg>
   )
@@ -10,7 +10,7 @@ function WhatsAppIcon({ size = 20 }: { size?: number }) {
 
 function PhoneIcon({ size = 20 }: { size?: number }) {
   return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <svg aria-hidden="true" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
       <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
     </svg>
   )
@@ -18,7 +18,7 @@ function PhoneIcon({ size = 20 }: { size?: number }) {
 
 function MailIcon({ size = 20 }: { size?: number }) {
   return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <svg aria-hidden="true" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
       <rect x="2" y="4" width="20" height="16" rx="2"/>
       <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
     </svg>
@@ -27,7 +27,7 @@ function MailIcon({ size = 20 }: { size?: number }) {
 
 function MapPinIcon({ size = 20 }: { size?: number }) {
   return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <svg aria-hidden="true" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
       <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
       <circle cx="12" cy="10" r="3"/>
     </svg>
@@ -36,7 +36,7 @@ function MapPinIcon({ size = 20 }: { size?: number }) {
 
 function ClockIcon({ size = 20 }: { size?: number }) {
   return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <svg aria-hidden="true" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
       <circle cx="12" cy="12" r="10"/>
       <polyline points="12 6 12 12 16 14"/>
     </svg>
@@ -45,7 +45,7 @@ function ClockIcon({ size = 20 }: { size?: number }) {
 
 function CheckIcon({ size = 20 }: { size?: number }) {
   return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <svg aria-hidden="true" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
       <polyline points="20 6 9 17 4 12"/>
     </svg>
   )
@@ -53,7 +53,7 @@ function CheckIcon({ size = 20 }: { size?: number }) {
 
 function StarIcon({ size = 20 }: { size?: number }) {
   return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" strokeWidth="1">
+    <svg aria-hidden="true" width={size} height={size} viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" strokeWidth="1">
       <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
     </svg>
   )
@@ -61,7 +61,7 @@ function StarIcon({ size = 20 }: { size?: number }) {
 
 function ArrowRightIcon({ size = 20 }: { size?: number }) {
   return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <svg aria-hidden="true" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
       <path d="M5 12h14"/>
       <path d="m12 5 7 7-7 7"/>
     </svg>
@@ -70,7 +70,7 @@ function ArrowRightIcon({ size = 20 }: { size?: number }) {
 
 function MenuIcon({ size = 20 }: { size?: number }) {
   return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <svg aria-hidden="true" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
       <line x1="4" y1="6" x2="20" y2="6"/>
       <line x1="4" y1="12" x2="20" y2="12"/>
       <line x1="4" y1="18" x2="20" y2="18"/>
@@ -80,7 +80,7 @@ function MenuIcon({ size = 20 }: { size?: number }) {
 
 function SendIcon({ size = 20 }: { size?: number }) {
   return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <svg aria-hidden="true" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
       <path d="m22 2-11 20-4-9-9-4Z"/>
       <path d="M22 2 11 13"/>
     </svg>
@@ -89,7 +89,7 @@ function SendIcon({ size = 20 }: { size?: number }) {
 
 function ArrowUpIcon({ size = 20 }: { size?: number }) {
   return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <svg aria-hidden="true" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
       <line x1="12" y1="19" x2="12" y2="5"/>
       <polyline points="5 12 12 5 19 12"/>
     </svg>
@@ -98,7 +98,7 @@ function ArrowUpIcon({ size = 20 }: { size?: number }) {
 
 function UsersIcon({ size = 20 }: { size?: number }) {
   return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <svg aria-hidden="true" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
       <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
     </svg>
   )
@@ -134,19 +134,19 @@ function ScrollReveal({ children, className = '' }: { children: React.ReactNode;
 }
 
 const SERVICES = [
-  { img: '/images/desentupimento.png', name: 'Desentupimento', desc: 'Pias, vasos, ralos, colunas, esgotos e fossas. Equipamento moderno e resolução rápida.' },
-  { img: '/images/dedetizacao.png', name: 'Dedetização', desc: 'Baratas, ratos, formigas, cupins e escorpiões. Produtos certificados pela ANVISA.' },
-  { img: '/images/bombas.png', name: 'Bombas e Recalque', desc: 'Instalação, manutenção e reparo de bombas d\'água, recalque e sistemas hidráulicos.' },
-  { img: '/images/caixa_agua.png', name: 'Limpeza de Caixa d\'Água', desc: 'Higienização completa com certificado. Água limpa e sem riscos para sua família.' },
-  { img: '/images/fossa.png', name: 'Limpeza de Fossa', desc: 'Limpeza de fossa séptica e caixa de gordura com destinação ambiental correta.' },
-  { img: '/images/preventivo.png', name: 'Contrato Preventivo', desc: 'Manutenção periódica para empresas e condomínios. Economia e segurança o ano todo.' },
+  { img: '/images/desentupimento.png', w: 2390, h: 1792, name: 'Desentupimento', desc: 'Pias, vasos, ralos, colunas, esgotos e fossas. Equipamento moderno e resolução rápida.' },
+  { img: '/images/dedetizacao.png', w: 2348, h: 1824, name: 'Dedetização', desc: 'Baratas, ratos, formigas, cupins e escorpiões. Produtos certificados pela ANVISA.' },
+  { img: '/images/bombas.png', w: 2390, h: 1792, name: 'Bombas e Recalque', desc: 'Instalação, manutenção e reparo de bombas d’água, recalque e sistemas hidráulicos.' },
+  { img: '/images/caixa_agua.png', w: 2752, h: 1536, name: 'Limpeza de Caixa d’Água', desc: 'Higienização completa com certificado. Água limpa e sem riscos para sua família.' },
+  { img: '/images/fossa.png', w: 1376, h: 768, name: 'Limpeza de Fossa', desc: 'Limpeza de fossa séptica e caixa de gordura com destinação ambiental correta.' },
+  { img: '/images/preventivo.png', w: 2752, h: 1536, name: 'Contrato Preventivo', desc: 'Manutenção periódica para empresas e condomínios. Economia e segurança o ano todo.' },
 ]
 
 const DIFFS = [
   { icon: <ClockIcon size={22} />, title: 'Atendimento 24h', desc: 'Disponíveis todos os dias, inclusive feriados. Emergências resolvidas rapidamente.' },
   { icon: <CheckIcon size={22} />, title: 'Técnicos Certificados', desc: 'Profissionais treinados e capacitados com equipamentos de última geração.' },
-  { icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>, title: 'Garantia por Escrito', desc: 'Todo serviço realizado tem garantia documentada e suporte pós-atendimento.' },
-  { icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 2v4"/><path d="M12 18v4"/><path d="M4.93 4.93l2.83 2.83"/><path d="M16.24 16.24l2.83 2.83"/><path d="M2 12h4"/><path d="M18 12h4"/><path d="M4.93 19.07l2.83-2.83"/><path d="M16.24 7.76l2.83-2.83"/></svg>, title: 'Orçamento Transparente', desc: 'Sem taxas ocultas. Você só autoriza depois de saber o valor exato.' },
+  { icon: <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>, title: 'Garantia por Escrito', desc: 'Todo serviço realizado tem garantia documentada e suporte pós-atendimento.' },
+  { icon: <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 2v4"/><path d="M12 18v4"/><path d="M4.93 4.93l2.83 2.83"/><path d="M16.24 16.24l2.83 2.83"/><path d="M2 12h4"/><path d="M18 12h4"/><path d="M4.93 19.07l2.83-2.83"/><path d="M16.24 7.76l2.83-2.83"/></svg>, title: 'Orçamento Transparente', desc: 'Sem taxas ocultas. Você só autoriza depois de saber o valor exato.' },
   { icon: <UsersIcon size={22} />, title: '+5.000 Clientes', desc: 'Mais de uma década atendendo com excelência residências, empresas e indústrias.' },
   { icon: <MapPinIcon size={22} />, title: 'Cobertura Regional', desc: 'Toda a Baixada Santista e Litoral Sul atendidos com equipes distribuídas estrategicamente.' },
 ]
@@ -232,8 +232,6 @@ export default function App() {
     return () => obs.disconnect()
   }, [])
 
-  const goWA = useCallback(() => window.open(WA, '_blank'), [])
-  const callTel = useCallback(() => window.open(TEL, '_self'), [])
   const scrollTop = useCallback(() => window.scrollTo({ top: 0, behavior: 'smooth' }), [])
 
   const submitForm = (e: React.FormEvent) => {
@@ -244,10 +242,12 @@ export default function App() {
 
   return (
     <div>
+      <a href="#main-content" className="skip-link">Pular para o conteúdo</a>
+
       {/* ═══ FLOAT WHATSAPP ═══ */}
-      <button onClick={goWA} className="float-wa" aria-label="WhatsApp">
+      <a href={WA} target="_blank" rel="noreferrer" className="float-wa" aria-label="WhatsApp">
         <WhatsAppIcon size={24} />
-      </button>
+      </a>
 
       {/* ═══ BACK TO TOP ═══ */}
       <button
@@ -262,10 +262,10 @@ export default function App() {
       <header className={`header ${scrolled ? 'scrolled' : 'transparent'}`}>
         <div className="container header-inner">
           <a href="#hero" className="header-logo">
-            <img src="/images/logo-escura.png" alt="Império das Bombas" className="header-logo-img" />
+            <img src="/images/logo-escura.png" alt="Império das Bombas" className="header-logo-img" width={833} height={293} />
           </a>
 
-          <nav className={`header-nav ${menuOpen ? 'open' : ''}`}>
+          <nav id="header-nav" className={`header-nav ${menuOpen ? 'open' : ''}`}>
             {NAV_ITEMS.map(item => (
               <a
                 key={item.id}
@@ -283,12 +283,19 @@ export default function App() {
             WhatsApp
           </a>
 
-          <button className="header-mobile-btn" onClick={() => setMenuOpen(m => !m)} aria-label="Menu">
+          <button
+            className="header-mobile-btn"
+            onClick={() => setMenuOpen(m => !m)}
+            aria-label="Menu"
+            aria-expanded={menuOpen}
+            aria-controls="header-nav"
+          >
             <MenuIcon size={20} />
           </button>
         </div>
       </header>
 
+      <main id="main-content">
       {/* ═══ HERO ═══ */}
       <section id="hero" className="hero">
         {/* Orbs animados */}
@@ -315,14 +322,14 @@ export default function App() {
             </p>
 
             <div className="hero-actions">
-              <button onClick={goWA} className="btn btn-primary btn-lg">
+              <a href={WA} target="_blank" rel="noreferrer" className="btn btn-primary btn-lg">
                 <WhatsAppIcon size={18} />
                 Chamar no WhatsApp
-              </button>
-              <button onClick={callTel} className="btn btn-outline btn-lg">
+              </a>
+              <a href={TEL} className="btn btn-outline btn-lg">
                 <PhoneIcon size={18} />
                 (13) 3481-2824
-              </button>
+              </a>
             </div>
 
             <div className="hero-stats">
@@ -345,12 +352,12 @@ export default function App() {
 
           <div className="hero-visual">
             <div className="hero-photo">
-              <img src="/images/hero-tecnico-real.png" alt="Técnico Império das Bombas em atendimento" />
+              <img src="/images/hero-tecnico-real.png" alt="Técnico Império das Bombas em atendimento" width={1402} height={1122} {...{ fetchpriority: 'high' }} />
             </div>
             <div className="hero-card">
               <div className="hero-card-header">
                 <div className="hero-card-avatar">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                  <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
                 </div>
                 <div className="hero-card-info">
                   <p className="hero-card-title">Atendimento 24h</p>
@@ -362,19 +369,19 @@ export default function App() {
               <div className="hero-card-list">
                 <div className="hero-card-item">
                   <div className="hero-card-item-icon">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 22s-8-4-8-10V5l8-3 8 3v7c0 6-8 10-8 10z"/></svg>
+                    <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 22s-8-4-8-10V5l8-3 8 3v7c0 6-8 10-8 10z"/></svg>
                   </div>
                   Orçamento grátis sem compromisso
                 </div>
                 <div className="hero-card-item">
                   <div className="hero-card-item-icon">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
                   </div>
                   Garantia por escrito em todo serviço
                 </div>
                 <div className="hero-card-item">
                   <div className="hero-card-item-icon">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
                   </div>
                   Chegamos em até 30 min na emergência
                 </div>
@@ -394,7 +401,7 @@ export default function App() {
       <div className="trust-bar">
         <div className="container trust-bar-inner">
           <div className="trust-item">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
             <strong>Emergência?</strong> Atendemos em até 30 min
           </div>
           <div className="trust-item">
@@ -419,7 +426,7 @@ export default function App() {
             <ScrollReveal>
               <div className="about-photo-wrap">
                 <div className="about-photo">
-                  <img src="/images/sobre-equipe.jpg" alt="Equipe técnica Império das Bombas" />
+                  <img src="/images/sobre-equipe.jpg" alt="Equipe técnica Império das Bombas" width={2624} height={1632} loading="lazy" />
                 </div>
                 <div className="about-stats-row">
                   <div className="about-stat-box">
@@ -456,11 +463,11 @@ export default function App() {
               </p>
               <div className="about-features">
                 {[
-                  { icon: <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 22s-8-4-8-10V5l8-3 8 3v7c0 6-8 10-8 10z"/></svg>, text: 'Equipamentos modernos e certificados' },
+                  { icon: <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 22s-8-4-8-10V5l8-3 8 3v7c0 6-8 10-8 10z"/></svg>, text: 'Equipamentos modernos e certificados' },
                   { icon: <CheckIcon size={18} />, text: 'Técnicos treinados e certificados' },
-                  { icon: <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>, text: 'Garantia por escrito em todos os serviços' },
+                  { icon: <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>, text: 'Garantia por escrito em todos os serviços' },
                   { icon: <ClockIcon size={18} />, text: 'Atendimento 24h · 7 dias por semana' },
-                  { icon: <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.13 12 19.79 19.79 0 0 1 1.06 3.38 2 2 0 0 1 3.05 1.17h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>, text: 'Orçamento 100% grátis e sem compromisso' },
+                  { icon: <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.13 12 19.79 19.79 0 0 1 1.06 3.38 2 2 0 0 1 3.05 1.17h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>, text: 'Orçamento 100% grátis e sem compromisso' },
                 ].map((f, i) => (
                   <div key={i} className="about-feature-item">
                     <div className="about-feature-icon">{f.icon}</div>
@@ -469,10 +476,10 @@ export default function App() {
                 ))}
               </div>
 
-              <button onClick={goWA} className="btn btn-primary btn-lg" style={{ marginTop: '2rem' }}>
+              <a href={WA} target="_blank" rel="noreferrer" className="btn btn-primary btn-lg" style={{ marginTop: '2rem' }}>
                 <WhatsAppIcon size={18} />
                 Fale com um especialista
-              </button>
+              </a>
             </ScrollReveal>
           </div>
         </div>
@@ -491,13 +498,13 @@ export default function App() {
             {SERVICES.map((s, i) => (
               <ScrollReveal key={s.name} className={`reveal-delay-${Math.min(i, 3)}`}>
                 <div className="service-card">
-                  <div className="service-card-img"><img src={s.img} alt={s.name} /></div>
+                  <div className="service-card-img"><img src={s.img} alt={s.name} width={s.w} height={s.h} loading="lazy" /></div>
                   <div className="service-card-body">
                     <h3>{s.name}</h3>
                     <p>{s.desc}</p>
-                    <button onClick={goWA} className="service-card-link">
+                    <a href={WA} target="_blank" rel="noreferrer" className="service-card-link">
                       Solicitar orçamento <ArrowRightIcon size={14} />
-                    </button>
+                    </a>
                   </div>
                 </div>
               </ScrollReveal>
@@ -513,10 +520,10 @@ export default function App() {
             {/* Lado esquerdo — imagem */}
             <ScrollReveal className="diffs-image-side">
               <div className="diffs-image-wrap">
-                <img src="/images/marketing (2).png" alt="Império das Bombas" className="diffs-image" />
+                <img src="/images/marketing (2).png" alt="Império das Bombas" className="diffs-image" width={1672} height={941} loading="lazy" />
                 <div className="diffs-image-badge">
                   <div className="diffs-badge-icon">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 22s-8-4-8-10V5l8-3 8 3v7c0 6-8 10-8 10z"/></svg>
+                    <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 22s-8-4-8-10V5l8-3 8 3v7c0 6-8 10-8 10z"/></svg>
                   </div>
                   <div>
                     <div className="diffs-badge-val">98%</div>
@@ -539,7 +546,7 @@ export default function App() {
                   <div key={d.title} className="diffs-feature-item">
                     <div className="diffs-feature-icon">{d.icon}</div>
                     <div>
-                      <h4 className="diffs-feature-title">{d.title}</h4>
+                      <h3 className="diffs-feature-title">{d.title}</h3>
                       <p className="diffs-feature-desc">{d.desc}</p>
                     </div>
                   </div>
@@ -615,7 +622,7 @@ export default function App() {
           <ScrollReveal>
             <div className="doc-grid">
               {[
-                'Certificado de Limpeza e Higienização de Caixa d\'Água',
+                'Certificado de Limpeza e Higienização de Caixa d’Água',
                 'Certificado de Dedetização e Controle de Pragas',
                 'Relatórios Técnicos com Fotos e Vídeos',
                 'Comprovantes de Execução dos Serviços',
@@ -648,7 +655,7 @@ export default function App() {
                   <div className="test-stars">
                     {[...Array(5)].map((_, j) => <StarIcon key={j} size={16} />)}
                   </div>
-                  <p className="test-text">"{t.text}"</p>
+                  <p className="test-text">“{t.text}”</p>
                   <div className="test-author">
                     <div className="test-avatar"><UsersIcon size={18} /></div>
                     <div>
@@ -680,11 +687,11 @@ export default function App() {
                   <div className="form-row">
                     <div className="form-group">
                       <label htmlFor="contato-nome">Seu nome</label>
-                      <input id="contato-nome" name="nome" type="text" placeholder="João Silva" value={form.nome} onChange={e => setForm(p => ({ ...p, nome: e.target.value }))} required />
+                      <input id="contato-nome" name="nome" type="text" autoComplete="name" placeholder="João Silva" value={form.nome} onChange={e => setForm(p => ({ ...p, nome: e.target.value }))} required />
                     </div>
                     <div className="form-group">
                       <label htmlFor="contato-telefone">Telefone / WhatsApp</label>
-                      <input id="contato-telefone" name="telefone" type="tel" placeholder="(13) 9xxxx-xxxx" value={form.telefone} onChange={e => setForm(p => ({ ...p, telefone: e.target.value }))} required />
+                      <input id="contato-telefone" name="telefone" type="tel" autoComplete="tel" placeholder="(13) 9xxxx-xxxx" value={form.telefone} onChange={e => setForm(p => ({ ...p, telefone: e.target.value }))} required />
                     </div>
                   </div>
                   <div className="form-group">
@@ -694,7 +701,7 @@ export default function App() {
                       <option>Desentupimento</option>
                       <option>Dedetização</option>
                       <option>Bomba de recalque</option>
-                      <option>Limpeza de caixa d'água</option>
+                      <option>Limpeza de caixa d’água</option>
                       <option>Limpeza de fossa</option>
                       <option>Contrato preventivo</option>
                       <option>Outro</option>
@@ -702,7 +709,7 @@ export default function App() {
                   </div>
                   <div className="form-group">
                     <label htmlFor="contato-mensagem">Descreva o problema</label>
-                    <textarea id="contato-mensagem" name="mensagem" placeholder="Conte mais detalhes sobre o que precisa..." value={form.mensagem} onChange={e => setForm(p => ({ ...p, mensagem: e.target.value }))} />
+                    <textarea id="contato-mensagem" name="mensagem" placeholder="Conte mais detalhes sobre o que precisa…" value={form.mensagem} onChange={e => setForm(p => ({ ...p, mensagem: e.target.value }))} />
                   </div>
                   <button type="submit" className="btn btn-primary btn-lg" style={{ width: '100%' }}>
                     <SendIcon size={17} />
@@ -742,10 +749,10 @@ export default function App() {
 
                 <div className="contact-socials">
                   <a href={INSTA} target="_blank" rel="noreferrer" className="contact-social contact-social-insta" aria-label="Instagram">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
                   </a>
                   <a href={FACE} target="_blank" rel="noreferrer" className="contact-social contact-social-face" aria-label="Facebook">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                    <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
                   </a>
                   <a href={WA} target="_blank" rel="noreferrer" className="contact-social contact-social-wa" aria-label="WhatsApp">
                     <WhatsAppIcon size={18} />
@@ -766,6 +773,7 @@ export default function App() {
           </div>
         </div>
       </section>
+      </main>
 
       {/* ═══ FOOTER ═══ */}
       <footer className="footer">
@@ -773,7 +781,7 @@ export default function App() {
           <div className="footer-grid">
             <div>
               <div className="footer-brand">
-                <img src="/images/logo-escura.png" alt="Império das Bombas" className="footer-logo-img" />
+                <img src="/images/logo-escura.png" alt="Império das Bombas" className="footer-logo-img" width={833} height={293} loading="lazy" />
               </div>
               <p className="footer-desc">
                 Especialistas em bombas, desentupimento, dedetização e manutenção hidráulica. 
@@ -782,19 +790,19 @@ export default function App() {
             </div>
 
             <div>
-              <h4>Serviços</h4>
+              <h3>Serviços</h3>
               <div className="footer-links">
                 <a href="#servicos">Desentupimento</a>
                 <a href="#servicos">Dedetização</a>
                 <a href="#servicos">Bombas e Recalque</a>
-                <a href="#servicos">Caixa d'água</a>
+                <a href="#servicos">Caixa d’água</a>
                 <a href="#servicos">Fossa e gordura</a>
                 <a href="#servicos">Preventivo</a>
               </div>
             </div>
 
             <div>
-              <h4>Empresa</h4>
+              <h3>Empresa</h3>
               <div className="footer-links">
                 <a href="#sobre">Sobre nós</a>
                 <a href="#diferenciais">Diferenciais</a>
@@ -805,7 +813,7 @@ export default function App() {
             </div>
 
             <div>
-              <h4>Contato</h4>
+              <h3>Contato</h3>
               <div className="footer-contact">
                 <div className="footer-contact-item">
                   <MapPinIcon size={15} />

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://imperio-das-bombas.vercel.app/sitemap.xml

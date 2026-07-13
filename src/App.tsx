@@ -134,12 +134,12 @@ function ScrollReveal({ children, className = '' }: { children: React.ReactNode;
 }
 
 const SERVICES = [
-  { img: '/images/desentupimento.png', w: 2390, h: 1792, name: 'Desentupimento', desc: 'Pias, vasos, ralos, colunas, esgotos e fossas. Equipamento moderno e resolução rápida.' },
-  { img: '/images/dedetizacao.png', w: 2348, h: 1824, name: 'Dedetização', desc: 'Baratas, ratos, formigas, cupins e escorpiões. Produtos certificados pela ANVISA.' },
-  { img: '/images/bombas.png', w: 2390, h: 1792, name: 'Bombas e Recalque', desc: 'Instalação, manutenção e reparo de bombas d’água, recalque e sistemas hidráulicos.' },
-  { img: '/images/caixa_agua.png', w: 2752, h: 1536, name: 'Limpeza de Caixa d’Água', desc: 'Higienização completa com certificado. Água limpa e sem riscos para sua família.' },
-  { img: '/images/fossa.png', w: 1376, h: 768, name: 'Limpeza de Fossa', desc: 'Limpeza de fossa séptica e caixa de gordura com destinação ambiental correta.' },
-  { img: '/images/preventivo.png', w: 2752, h: 1536, name: 'Contrato Preventivo', desc: 'Manutenção periódica para empresas e condomínios. Economia e segurança o ano todo.' },
+  { img: '/images/desentupimento.webp', w: 800, h: 600, name: 'Desentupimento', desc: 'Pias, vasos, ralos, colunas, esgotos e fossas. Equipamento moderno e resolução rápida.' },
+  { img: '/images/dedetizacao.webp', w: 800, h: 621, name: 'Dedetização', desc: 'Baratas, ratos, formigas, cupins e escorpiões. Produtos certificados pela ANVISA.' },
+  { img: '/images/bombas.webp', w: 800, h: 600, name: 'Bombas e Recalque', desc: 'Instalação, manutenção e reparo de bombas d’água, recalque e sistemas hidráulicos.' },
+  { img: '/images/caixa_agua.webp', w: 800, h: 447, name: 'Limpeza de Caixa d’Água', desc: 'Higienização completa com certificado. Água limpa e sem riscos para sua família.' },
+  { img: '/images/fossa.webp', w: 800, h: 447, name: 'Limpeza de Fossa', desc: 'Limpeza de fossa séptica e caixa de gordura com destinação ambiental correta.' },
+  { img: '/images/preventivo.webp', w: 800, h: 447, name: 'Contrato Preventivo', desc: 'Manutenção periódica para empresas e condomínios. Economia e segurança o ano todo.' },
 ]
 
 const DIFFS = [
@@ -167,6 +167,12 @@ const TESTIMONIALS = [
   { name: 'João Ribeiro', city: 'São Vicente', text: 'Problema na bomba de recalque resolvido no mesmo dia. Preço justo e garantia por escrito. Muito obrigado!' },
 ]
 
+const HERO_WORDS = [
+  ...'Soluções profissionais em'.split(' ').map(w => ({ w, gold: false })),
+  ...'bombas, desentupimento'.split(' ').map(w => ({ w, gold: true })),
+  ...'e dedetização'.split(' ').map(w => ({ w, gold: false })),
+]
+
 const NAV_ITEMS = [
   { id: 'sobre', label: 'Sobre' },
   { id: 'servicos', label: 'Serviços' },
@@ -190,31 +196,6 @@ export default function App() {
     }
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
-  }, [])
-
-
-  // SplitType hero title animation
-  useEffect(() => {
-    const script = document.createElement('script')
-    script.src = 'https://unpkg.com/split-type'
-    script.onload = () => {
-      try {
-        const ST = (window as any).SplitType
-        if (!ST) return
-        const el = document.querySelector('.hero-split-title') as HTMLElement
-        if (!el) return
-        const split = new ST(el, { types: 'words' })
-        split.words.forEach((word: HTMLElement, i: number) => {
-          word.style.opacity = '0'
-          word.style.transform = 'translateY(24px)'
-          word.style.display = 'inline-block'
-          word.style.transition = `opacity 0.7s cubic-bezier(0.22,1,0.36,1) ${i * 80}ms, transform 0.7s cubic-bezier(0.22,1,0.36,1) ${i * 80}ms`
-          setTimeout(() => { word.style.opacity = '1'; word.style.transform = 'translateY(0)' }, 120 + i * 80)
-        })
-      } catch {}
-    }
-    document.head.appendChild(script)
-    return () => { try { document.head.removeChild(script) } catch {} }
   }, [])
 
   useEffect(() => {
@@ -312,8 +293,12 @@ export default function App() {
               Atendimento 24h · Emergência
             </div>
 
-            <h1 className="hero-split-title">
-              Soluções profissionais em <span>bombas, desentupimento</span> e dedetização
+            <h1>
+              {HERO_WORDS.map((x, i) => (
+                <span key={i} className={`hero-word${x.gold ? ' hero-word-gold' : ''}`} style={{ animationDelay: `${120 + i * 80}ms` }}>
+                  {x.w}
+                </span>
+              )).reduce<React.ReactNode[]>((acc, el, i) => (i === 0 ? [el] : [...acc, ' ', el]), [])}
             </h1>
 
             <p>
@@ -352,7 +337,7 @@ export default function App() {
 
           <div className="hero-visual">
             <div className="hero-photo">
-              <img src="/images/hero-tecnico-real.png" alt="Técnico Império das Bombas em atendimento" width={1402} height={1122} {...{ fetchpriority: 'high' }} />
+              <img src="/images/hero-tecnico-real.webp" alt="Técnico Império das Bombas em atendimento" width={1100} height={880} {...{ fetchpriority: 'high' }} />
             </div>
             <div className="hero-card">
               <div className="hero-card-header">
@@ -426,7 +411,7 @@ export default function App() {
             <ScrollReveal>
               <div className="about-photo-wrap">
                 <div className="about-photo">
-                  <img src="/images/sobre-equipe.jpg" alt="Equipe técnica Império das Bombas" width={2624} height={1632} loading="lazy" />
+                  <img src="/images/sobre-equipe.webp" alt="Equipe técnica Império das Bombas" width={1080} height={672} loading="lazy" />
                 </div>
                 <div className="about-stats-row">
                   <div className="about-stat-box">
@@ -520,7 +505,7 @@ export default function App() {
             {/* Lado esquerdo — imagem */}
             <ScrollReveal className="diffs-image-side">
               <div className="diffs-image-wrap">
-                <img src="/images/marketing (2).png" alt="Império das Bombas" className="diffs-image" width={1672} height={941} loading="lazy" />
+                <img src="/images/marketing.webp" alt="Império das Bombas" className="diffs-image" width={1080} height={608} loading="lazy" />
                 <div className="diffs-image-badge">
                   <div className="diffs-badge-icon">
                     <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 22s-8-4-8-10V5l8-3 8 3v7c0 6-8 10-8 10z"/></svg>
